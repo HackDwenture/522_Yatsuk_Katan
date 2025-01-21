@@ -43,7 +43,7 @@ namespace _522_Yatsuk_Katan
             // Превращает текст из полей в числа. Значение сток сокраняется в переменные x и y
             if (!double.TryParse(input_x.Text, out double x) || !double.TryParse(input_y.Text, out double y))
             {
-                MessageBox.Show("Пожалуйста, введите корректные числовые значения для x и m.", "Ошибка ввода");
+                MessageBox.Show("Пожалуйста, введите корректные числовые значения для x и y.", "Ошибка ввода");
                 return;
             }
             // Сохраняет результат выполения функции в переменную result
