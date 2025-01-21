@@ -24,5 +24,10 @@ namespace _522_Yatsuk_Katan
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

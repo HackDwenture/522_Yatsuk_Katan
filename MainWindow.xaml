@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="376,69,0,0" VerticalAlignment="Top" Height="252" Width="114"/>
-        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="635,256,0,0" VerticalAlignment="Top" Height="49" Width="103"/>
+        <Button Content="Вычислить" HorizontalAlignment="Left" Margin="376,280,0,0" VerticalAlignment="Top" Height="25" Width="81" Click="Button_Click"/>
+        <Button Content="Очистить" HorizontalAlignment="Left" Margin="376,322,0,0" VerticalAlignment="Top" Height="25" Width="81" Click="Button_Click"/>
 
     </Grid>
 </Window>
