@@ -40,18 +40,21 @@ namespace _522_Yatsuk_Katan
         //Реализация функции расчета
         private void calc_btn_Click(object sender, RoutedEventArgs e)
         {
-            // Превращает текст из полей в числа. Значение сток сокраняется в переменные x и y
             if (!double.TryParse(input_x.Text, out double x) || !double.TryParse(input_y.Text, out double y))
             {
                 MessageBox.Show("Пожалуйста, введите корректные числовые значения для x и y.", "Ошибка ввода");
                 return;
             }
-            // Сохраняет результат выполения функции в переменную result
+            if (func_1.IsChecked == false& func_2.IsChecked == false& func_3.IsChecked == false)
+            {
+                MessageBox.Show("Выберите функцию.", "Ошибка ввода");
+                return;
+            }
+
+                
             double result = CalculateFunction(x, y);
-            // Преобразует число в строку
             result_tb.Text = result.ToString();
         }
-        // Короч, это сам прмер. Вооооооть
         private double CalculateFunction(double x, double y)
         {
             Func<double, double> f = GetSelectedFunction();
@@ -70,7 +73,7 @@ namespace _522_Yatsuk_Katan
             }
             else
             {
-                return 0; // Или как обработать некорректные условия
+                return 0; 
             }
         }
         private Func<double, double> GetSelectedFunction()
@@ -82,7 +85,7 @@ namespace _522_Yatsuk_Katan
             else if (func_3.IsChecked == true)
                 return x => Math.Exp(x);
             else
-                return x => 0; // По умолчанию
+                return x => 0; 
         }
 
         //---
@@ -105,4 +108,4 @@ namespace _522_Yatsuk_Katan
     }
 }
 
-//Необходимо реализвать функцию расчета, организовать проверку на пустоту, выводить ошибку в случае заполнения не числовыми значениями или если ничем не заполнено.
+

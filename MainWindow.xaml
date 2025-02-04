@@ -25,7 +25,7 @@
             <RowDefinition Height="38*"/>
         </Grid.RowDefinitions>
 
-        <Image Margin="2,10,1,9" Source="/Image2.png" Stretch="Fill" Grid.Column="1"/>
+        <Image Margin="2,10,1,9" Source="/Image.png" Stretch="Fill" Grid.Column="1"/>
 
         <TextBox x:Name="input_x" 
             HorizontalAlignment="Left" 
